@@ -35,11 +35,11 @@ public class Pizza {
 
     public void addExtraToppings(){
         // your code goes here
-        if(isVeg){
+        if(isVeg && this.toppingsAdded==false){
             this.price+=70;
             this.toppingsAdded=true;
         }
-        else if(isVeg==false){
+        else if(isVeg==false && this.toppingsAdded==false){
             this.price+=120;
             this.toppingsAdded=true;
         }
